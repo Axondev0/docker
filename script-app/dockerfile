@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y curl
+WORKDIR /app
+COPY hello.sh .
+RUN chmod +x hello.sh
+CMD ["./hello.sh"]  
