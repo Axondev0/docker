@@ -9,7 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Build Docker Image
-        run: docker build -t axondevs/my-script-app:latest .
-      
-      - name: Run Container
-        run: docker run axondevs/my-script-app:latest
+        run: docker build -t axondevs/my-script-app:latest ./script-app 
